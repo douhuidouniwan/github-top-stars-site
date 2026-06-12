@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Star Top 10 项目观察</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">★</span>
+      <span>GitHub Star Top 10</span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#ranking">排名</a>
+      <a href="#insights">观察</a>
+      <a href="#method">数据说明</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">截至 2026-06-12 的公开榜单观察</p>
+        <h1>GitHub 上最受欢迎的 10 个开源项目</h1>
+        <p class="lead">它们不只是 star 多，更代表了开发者社区长期关注的方向：自学路径、免费知识、公共 API、系统设计、面试准备和主流工程框架。</p>
+      </div>
+      <div class="hero-panel" aria-label="榜单摘要">
+        <div><span class="metric">10</span><span class="label">个项目</span></div>
+        <div><span class="metric">270万+</span><span class="label">合计约 star</span></div>
+        <div><span class="metric">6</span><span class="label">类核心主题</span></div>
+      </div>
+    </section>
+
+    <section class="summary-strip" aria-label="项目类别摘要">
+      <span>学习资源</span>
+      <span>路线图</span>
+      <span>API 索引</span>
+      <span>面试准备</span>
+      <span>系统设计</span>
+      <span>开发框架</span>
+    </section>
+
+    <section id="ranking" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Ranking</p>
+        <h2>Top 10 项目详细介绍</h2>
+      </div>
+      <div class="repo-grid" id="repoGrid"></div>
+    </section>
+
+    <section id="insights" class="section insights">
+      <div class="section-heading">
+        <p class="eyebrow">Insights</p>
+        <h2>从榜单看开源社区偏好</h2>
+      </div>
+      <div class="insight-grid">
+        <article>
+          <h3>知识型仓库占据主导</h3>
+          <p>前十名里有大量项目不是传统软件，而是课程、书单、路线图和精选列表。这说明 GitHub 对很多开发者来说不仅是代码托管平台，也是学习入口。</p>
+        </article>
+        <article>
+          <h3>可执行的学习路径最有传播力</h3>
+          <p>developer-roadmap、coding-interview-university、system-design-primer 等项目的共同点，是把复杂能力拆成清晰路径，降低了自学和求职准备的门槛。</p>
+        </article>
+        <article>
+          <h3>长期维护比短期热点更重要</h3>
+          <p>这些项目多数经历多年迭代，靠持续更新、社区贡献和稳定价值累积 star。它们的成功更像基础设施，而不是一次性爆款。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="method" class="section method">
+      <div class="section-heading">
+        <p class="eyebrow">Method</p>
+        <h2>数据口径</h2>
+      </div>
+      <p>榜单参考 GitHub 仓库搜索的 star 降序结果，并结合公开仓库页面信息整理。由于 star 数实时变化，页面采用“约 star”展示，适合做介绍页和趋势观察，不作为精确审计报告。</p>
+      <div class="source-row">
+        <a href="https://github.com/search?q=stars%3A%3E1&type=repositories&s=stars&o=desc" target="_blank" rel="noreferrer">查看 GitHub 当前排序</a>
+        <a href="https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories" target="_blank" rel="noreferrer">GitHub 搜索说明</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for a quick public GitHub Pages showcase. Data snapshot: 2026-06-12.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
